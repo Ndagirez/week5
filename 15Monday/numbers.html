@@ -1,0 +1,60 @@
+<!--numbers-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>NUMBERS</title>
+    </head>
+    <body>
+        <h1 id="one"></h1>
+        <!--numerical strings-->
+        <script>
+            var x = "100";
+            var y = "10";
+            var z = x * y;
+            document.getElementsById("one").innerHTML= Z;//this doesnt work because the numbers are recognised as strings
+
+        </script>
+        <!--NaN-->
+        <h1 id="two"></h1>
+        <!--NaN  means not a number-->
+        <script>
+            var y =100/"apple";
+            document.getElementById("two").innerHTML= y;
+        </script>
+        <!--if string contains a numeric value, anumber is returned-->
+        <h1 id="three"></h1>
+        <!--NaN  means not a number-->
+        <script>
+            var y =100/"10";
+            document.getElementById("three").innerHTML= y;//returns a number
+        </script>
+        <!--isNaN( ) METHOD TO CHECK WHETHER NOT A NUMBER-->
+        <h1 id="FOUR"></h1>
+        <!--NaN  means not a number-->
+        <script>
+            var y =100/"10";
+            document.getElementById("FOUR").innerHTML= isNaN(y);//returns FALSE because 10 is a string not a number
+        </script>
+        <!--typeof NaN-->
+        <p id="FIVE"></p>
+
+        <script>
+            var Z = NaN;
+            document.getElementById("FIVE").innerHTML = typeof Z;//RETURNS A NUMBER
+        </script>
+
+        <p id="six"></p>
+
+        <script>
+            var myNumber = 9; 
+            var txt = "";
+            while (myNumber != Infinity) {
+            myNumber = myNumber * myNumber;
+            txt = txt + myNumber + "<br>";
+            }
+            document.getElementById("six").innerHTML = txt;//infinity is returned after reaching the largest possible value
+        </script>
+        <!--division by zero also generates infinity-->
+
+    </body>
+</html>
