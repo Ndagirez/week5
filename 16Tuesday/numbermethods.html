@@ -1,0 +1,109 @@
+<!--number methods-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>number methods</title>
+    </head>
+    <body>
+        <h1 id = "one"></h1>
+        <p>tostring() method</p>
+        <!--converts number to string-->
+        <script>
+            var x = 19;
+            document.getElementById("one").innerHTML =
+
+            x.toString()+ "<br>"+ 
+            (245).toString() + "<br>" +
+            (100).toString();
+
+        </script>
+        <p>toexponential() method</p>
+        <!--used to return strings with a number which has exponetials-->
+        <h1 id="two"></h1>
+        <script>
+            var y = 9.99;
+            document.getElementById("two").innerHTML=
+            x.toExponential()+ "<br>"+
+            x.toExponential(2)+ "<br>"+
+            x.toExponential(6);
+
+        </script>
+
+        <p>toFixed()</p>
+        <!--used to return numbers with given decimal places -->
+        <h1 id="three"></h1>
+        <script>
+            var m = 56.8;
+            document.getElementById("three").innerHTML = 
+            m.toFixed(1)+ "<br>"+//rounds to one dp
+            m.toFixed(2)+ "<br>"+//rounds to 2 dp
+            m.toFixed(5);//rounds to 5 dp
+        </script>
+        <p>to precision</p>
+        <!--returns a string with a given length-->
+        <h1 id="four"></h1>
+        <script>
+            var w = 7.9;
+            document.getElementById("four").innerHTML = 
+            w.toPrecision(1)+ "<br>"+
+            w.toPrecision(5)+ "<br>"+
+            w.toPrecision(3);
+
+        </script>
+        <p>valueof()</p>
+        <!--returns the number as a number-->
+        <h1 id="five"></h1>
+        <script>
+            var house = 785;
+            document.getElementById("five").innerHTML =
+            house.valueOf()+ "<br>"+
+            (4678).valueOf()+ "<br>"+
+            (590/5).valueOf();
+        </script>
+        <p>number global method</p>
+        <!--converts variables to numbers-->
+        <h1 id="six"></h1>
+        <script>
+            document.getElementById("six").innerHTML = 
+            Number(true)+ "<br>"+      // number because true is treated as one in logic
+            Number(" 10")+ "<br>"+   //number
+            Number("man")+ "<br>"+   //not a number
+            Number("10 30");         //not a number
+        </script>
+
+
+        <p>parseint() global method</p>
+        <!--parses a string and brings a number-->
+        <!--only first number is returned-->
+        <h1 id="seven"></h1>
+        <script>
+            document.getElementById("six").innerHTML = 
+            parseInt("10.30")+ "<br>"+  //returns 10
+            parseInt("i am in grade 4")+ "<br>"+  //returns NaN since first reached value is string
+            parseInt("0 10");/// returns zero since zero is reached first
+            
+        </script>
+
+        <p>parseFloat() global method</p>
+        <!--parses a string and brings a number-->
+        <!--only first number is returned-->
+        <h1 id="eight"></h1>
+        <script>
+            document.getElementById("eight").innerHTML = 
+            parseFloat("10.30")+ "<br>"+  //returns 10.3
+            parseFloat("i am in grade 4")+ "<br>"+  //returns NaN since first reached value is string
+            parseFloat("0 10");// returns zero since zero is reached first
+            
+        </script>
+        <p>number propertise</p>
+        <ul>
+            <li>MAX_VALUE -gives largest value in javascript</li>
+            <li>MIN_VALUE -gives SMALLEST value in javascript</li>
+            <li>POSITIVE_INFINITY -REPRESENTS positive infinity  in javascript</li>
+            <li>NEGATIVE_INFINITY -represents negative infinity in javascript</li>
+            <li>number properties can not be used on variables</li>
+        </ul>
+
+
+    </body>
+</html>
